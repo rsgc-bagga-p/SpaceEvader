@@ -1,0 +1,1409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		050E077361AD33C37081AB8628158530 /* DictionaryDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520AA9FB540F191C6128694EB8DEAA28 /* DictionaryDocument.swift */; };
+		07C8BCC665121C82B5B8427731C56790 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = D207EC1D5F0F03BA4DB7BE2443371CE1 /* Query.swift */; };
+		0CE9BD4158436C2645BF4F01E24BA293 /* AzureData.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E14EBD7505414BCFC734025EB5D3BBC /* AzureData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E746EB66293D5657F22B141E38DE212 /* CodableDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF07698342528F8BACE4346082D7AD /* CodableDictionary.swift */; };
+		103366D85E868476729D9A9C5A3D4323 /* AzureKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C2B7B7913F03CE36DED0E41ECE8B18 /* AzureKeys.swift */; };
+		152222283E318F2E97DCBC9C9A306D59 /* PermissionMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714BE08552522C72036BD8DF047660CA /* PermissionMode.swift */; };
+		165B6523D28A4B1B6A04D673CB42F63E /* DocumentClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF68F969BBEA1179B9EA6361011D351 /* DocumentClientError.swift */; };
+		1682B00C48C7EA937A1A672F7657BDDC /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D04A57627F884EB67A3CEE8084B4F3B /* Resources.swift */; };
+		195F926185AE1A69822E759768E12050 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402E547422F9AD060C6D71508293DC0 /* Logger.swift */; };
+		1B8F850D336CF9531BF5832B641F57BE /* ResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F06EDAED9F53936E1423F655AC19C8B /* ResourceType.swift */; };
+		1E899B351FFF307EAEFC6A5E74FDD666 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 990CB14138AF46C7BA8A195833A73BAC /* Foundation.framework */; };
+		204EDD6DEC20DF992AE75EA20CF713DA /* ResourceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBBA9131955382144FEB5A069B14B8F /* ResourceError.swift */; };
+		20517763C255616D1779B73C58B70950 /* DocumentClientExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6D3EDCC709AE989E6329C5E492F29E /* DocumentClientExtensions.swift */; };
+		230C379437CB356C8006679DA585D78A /* CryptoProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F2AB487A2F7B9255A47ACFE3E5647AD /* CryptoProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		295250CF0BDD5EA3B3488047D71238E0 /* AzureData-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31EFC6CF8420F86E90FB7D5702482595 /* AzureData-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35EE92E17FB231E3AB45F5B71BC24093 /* AzureDataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474982C4C16511E2291A336454460377 /* AzureDataExtensions.swift */; };
+		39CF21C785472CA79625A5408BDD0C35 /* AzureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36ED4AB26149C6F8274ECDB88BBA7413 /* AzureData.swift */; };
+		40884DB306E216DFC300F3477E7D55C2 /* LogModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2DC9358CC8C738B01C474A6DA3AAF5 /* LogModifier.swift */; };
+		42A24EDF81AD7C9A66FFAD4A027CFB29 /* ConflictStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D867AD96C2F7BB1CDCC81950319A8AD3 /* ConflictStrategy.swift */; };
+		457BB1C16FD87FA5BD9220FF82736F3A /* Pods-SpaceFinder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C34FAD2B4491DD6EAD5227A87BC9FC26 /* Pods-SpaceFinder-dummy.m */; };
+		4A37CD6ABD63F5465E85E7C0ECAC4459 /* ResourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D14AB20343C32F0F32998DC5BFE12D /* ResourceLocation.swift */; };
+		4A5BBCD6E77CBE1F5564BDDAD43DCC5B /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6592A01D94FB630068675AEBF752D9C8 /* Trigger.swift */; };
+		4AD1DF870DB6C26144D7497668162D60 /* ResourceCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F198C6D85AD0AAC57EFC61B3894D78 /* ResourceCache.swift */; };
+		4CD0D326C55C4363B8EE82939FEA4F50 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955C91569FE1A0024C402FE590EBBE48 /* KeychainAccess.framework */; };
+		4F46623BE810A12DD97CD32C386E614D /* AzureCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEA6872F46D50CD146ABC5C29BEF3B8 /* AzureCore.framework */; };
+		4F7DA5DC8845079ABBB76602983A85C6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E4EDCF97765133249EDD3EE29CD0D /* User.swift */; };
+		4FE0B62A172DEF17DC4E240C0674AA43 /* Willow-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69FFBB1A76B70FE6A1E28748AA53E22C /* Willow-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		532CD31F611FE1985F33C01543DF3865 /* ResourceWriteOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC901E189C28FC699719BC935E378E9 /* ResourceWriteOperation.swift */; };
+		56C05E4E2B66A8B9E2FCE9DD56CB2034 /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F63E72BC97D1AEB81EA3C064F5A54 /* LogLevel.swift */; };
+		578F9F0D2AF8FB5B1DC604D1D8CBE32C /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955C91569FE1A0024C402FE590EBBE48 /* KeychainAccess.framework */; };
+		58E23CEA28183C9F4D5D5215A1F59742 /* KeychainAccess-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D9644256F6EDF0F6B9CD4F1300890 /* KeychainAccess-dummy.m */; };
+		5B93B744EF30EC5DF4CE4BABFE7909C0 /* LogMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AAA22A2A392ECEAFDA08E23811E899 /* LogMessage.swift */; };
+		604F3CF9BD74DAC6989D3829BE9497A5 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBCBD56263593AAADE89F9282C28EE3 /* Logger.swift */; };
+		6977DC463A5BF607EFA4133140CFC2F6 /* Willow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF2F7306D73EE96E8DAA353FC90B4EF /* Willow.framework */; };
+		6E7710997F12131E975910661831B25D /* ResourceEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC781595B25140F3DD9D2205DFAB38F /* ResourceEncryptor.swift */; };
+		6EC841821B0570EE3DE7F4C927CCA72E /* CodableResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173936D0283DE48FC2256FA017292DBB /* CodableResource.swift */; };
+		6FB555F57CEF1AA09A9F1463B4333A18 /* AzureData-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2502BF113A6890A1D557CD8C88A429E /* AzureData-dummy.m */; };
+		71C45C7B9BD17BB1BD599AA3C68A90BF /* ResourceOracle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438ADE0503BF27CA72B585E7C674C52A /* ResourceOracle.swift */; };
+		7381A8D50715322DC3A2206BAA0187F1 /* UserDefinedFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F0715AED92D92BD183A5F30FCDB272 /* UserDefinedFunction.swift */; };
+		75BAB1D347342BBD912096B239C9C38F /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D07C7849939CCF8746D668FAF6BFD8 /* Permission.swift */; };
+		7A6715498E908FBF03354AA63A3ED2B1 /* AzureCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DBF1EE31B375EC46809DCD696291E5 /* AzureCore-dummy.m */; };
+		7F049A7C84C63D6B07AB4E038B5F9BD0 /* AzureCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC58C0F321569311FB9B10C76188EE3 /* AzureCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8388663AF4C046C26C2AA05E26FEA9D1 /* Attachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC14E67A411F3F19A5A4CD6F7F0B931 /* Attachment.swift */; };
+		843F540B46C430382EDB0ACB74B98E76 /* Willow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF2F7306D73EE96E8DAA353FC90B4EF /* Willow.framework */; };
+		86A476EEF3DEDD2E167A4B18304D99F2 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1E9A8CBB3DA39DA8CA08F661DD8F87 /* Offer.swift */; };
+		86C791E5941EDAC4BDBDAF09590AA2ED /* PermissionProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898C0BAA5F3F14A6A2C8A4FEA39B57DD /* PermissionProviderError.swift */; };
+		8E4118110A54FE4A4F49B83A884D42E4 /* ResourceTokenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B613A668F97ABCAD09F6D51E26645F /* ResourceTokenProvider.swift */; };
+		918D8C04A23FACBEF4BB5E16BB3141D8 /* DatabaseAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46C33E621F159C6C195969B9B2D971 /* DatabaseAccount.swift */; };
+		9223C3C9B8F6252C6606A7F616E83CEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 990CB14138AF46C7BA8A195833A73BAC /* Foundation.framework */; };
+		9297761AF6BF27350BF5EAA4E174E3F5 /* DocumentCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284DD16F7C6AABB09247C8D3A2C8FBA1 /* DocumentCollection.swift */; };
+		94937BEAAAEE94B9509128D19BAD17A1 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741220263009624BFCA2BCD45FFA09F3 /* Keychain.swift */; };
+		A01EE2A464D2FBDBF4A1B3CD18D02E40 /* CryptoProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DA308BE29FA0AB0276CF64F283BB99EA /* CryptoProvider.m */; };
+		A0D60E15C249953D0DF3428100FCC8C5 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3F840997746DF08D77810E7E153EE4 /* ReachabilityManager.swift */; };
+		A2A1058DFFF2ED92A814487C349093BF /* HttpHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A181CA69D3860DCCA625F3B03E49D003 /* HttpHeader.swift */; };
+		A35C8E2B93CB53F48038ADD796C11A1D /* LogWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E486AD86D5C2E59A73A0BEDC868BC4 /* LogWriter.swift */; };
+		A427A4E4F4FE7DCED803ECF9E66920DA /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEDD3CC1BEF4A54BFDA5D22D50041 /* Database.swift */; };
+		A7A0A4F2806B8D3A01E75817B1F8D0F9 /* StoredProcedure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7DBF359483A897FD40814AF3330FBC /* StoredProcedure.swift */; };
+		AAE8A5732459A36D52D8A6DACA777FE8 /* AzureCore.h in Headers */ = {isa = PBXBuildFile; fileRef = FDFE7615E688074B9CEF13842DEF9894 /* AzureCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC1C93AE320964087F3236AD45043913 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 990CB14138AF46C7BA8A195833A73BAC /* Foundation.framework */; };
+		AD4FACBD1F166BC7A6634B2F64C96DEE /* UtilityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563A6B437986B65EA754D8969CBEF210 /* UtilityExtensions.swift */; };
+		B4958B014AE8A88A355CA69EF41136B7 /* MSHttpHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ACBF1516009AA0663D0F024930A3AA /* MSHttpHeader.swift */; };
+		B5B93E1256D287ADCD08B90F69C16F9E /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3267892F30E6DB16759DF4552018B3AE /* DateFormat.swift */; };
+		B75E62AD90EE229FE2DB09A50621B704 /* ReachabilityManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8625E05A41BDD52B64E24EFC038C2D /* ReachabilityManagerType.swift */; };
+		B77B83E52D1F0827F614452A061C3018 /* PermissionCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E8EB7FFC37D8CE6CBD5D98218027C /* PermissionCache.swift */; };
+		B8F749E88761A418BDD69E5195223FC0 /* Conflict.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC5980AB7E82B7DAA116CE72C1F4EBD /* Conflict.swift */; };
+		B949C56DC14D56C02BB3659EF5954581 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD34D0CBD7877A208B4F08E7E9DFD10 /* HttpMethod.swift */; };
+		B95F84217FEA98B15EF677E83F095CAA /* DocumentClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0DEEA1D0801B7DAEB618664DBF9C45 /* DocumentClient.swift */; };
+		BB153C3F9019B0877C892B4C5B1276E8 /* ResponseMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022D351F687FB5DA577B9EA23911C97 /* ResponseMetadata.swift */; };
+		BF137F9FABDB91EC67FE72A55AC737E0 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC57F559EECD134FF751D956397ABD /* Response.swift */; };
+		C099E30536CECF3EFA097BB9399E8ACB /* KeychainAccess-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 19ADF8B8BD0FD966092160C53C06D047 /* KeychainAccess-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C12A25D204E6C7CF0F3DED16CA4496CA /* PermissionProviderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E02AB8CD4896FCB586B128085EF6F6D /* PermissionProviderConfiguration.swift */; };
+		CB30BC39FD7972FA79EF0155F3BB8DFC /* PermissionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C375AD049E0BB7D96CDD06910982422C /* PermissionProvider.swift */; };
+		CDF428ADC25BDB5E714B673EFBDE3A2D /* Willow-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D73951DDEEC036C2875C21115D5ADA /* Willow-dummy.m */; };
+		D347D30D0EDF3377F1463E4CEB818655 /* Pods-SpaceFinder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D291381F197F75339EE195B6C7BC46FC /* Pods-SpaceFinder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8ADB818973FD8CFC7B07E75C4F50DAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 990CB14138AF46C7BA8A195833A73BAC /* Foundation.framework */; };
+		D8C1976A040860B8F8508434BC0A8533 /* SupportsPermissionToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEDD6029A8C58561C7175D4E22267E8 /* SupportsPermissionToken.swift */; };
+		DB43AA4774CBD6CAB0216982D8EDC8F8 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A51E3EF903AF75C5228734EE7CF931D /* Document.swift */; };
+		E3EB1974D71BFFE907D5AAFD13865DC1 /* ResourceRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FB85BA8F3AA037FBE20B205AF78008 /* ResourceRequestError.swift */; };
+		E449F246A61A3EECC67806BA39FC2125 /* CodableResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB43BB93DAC1882384C596B4EE92392F /* CodableResources.swift */; };
+		E5FE83481A0FB2C183A89F9231A22992 /* ResourceWriteOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4D07D4571A37643671A9C986382BCF /* ResourceWriteOperationQueue.swift */; };
+		E9167D7B8822A6704A930F65AD779B27 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD110DA576B4CDF464361C7D26B8B23 /* Keychain.swift */; };
+		E960A30BCD7A294C51024C853E8B9C75 /* ResourceSystemProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E89EEA2FB55F3125D23AB93FC94C39 /* ResourceSystemProperties.swift */; };
+		F469FA2CE4BA1F5D39F75A05B47A91D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 990CB14138AF46C7BA8A195833A73BAC /* Foundation.framework */; };
+		F8E0205F86E6EA3249AFC14B6BED6FD8 /* HttpStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34C67FD7C653A8897609A98BE1FEC4 /* HttpStatusCode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B64ABA4F691CDE74A1259DA20D62F28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C58C6CB677CE4DE6DB2496CC6E54F180;
+			remoteInfo = AzureData;
+		};
+		1F36B7756D9B917D13A1C02BD2CB9E8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EF53D56E10C35A60057740B0A6C4D56;
+			remoteInfo = AzureCore;
+		};
+		26902583BF695CEC2350A326265A1CD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C751D179DD234677CA9F2526A9B8289;
+			remoteInfo = KeychainAccess;
+		};
+		3AD0913CC4600078DBA3964FB49305F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EF53D56E10C35A60057740B0A6C4D56;
+			remoteInfo = AzureCore;
+		};
+		845C705EC760BE766B18B38042BA184B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1107B018E43FBCC76CE9E800C389EFDB;
+			remoteInfo = Willow;
+		};
+		8A3E8545425C2C9F4CE641EE60B5395A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1107B018E43FBCC76CE9E800C389EFDB;
+			remoteInfo = Willow;
+		};
+		910E608BF27C762A96BE2F3D351034DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C751D179DD234677CA9F2526A9B8289;
+			remoteInfo = KeychainAccess;
+		};
+		97973A1BB2149FBDDDDF34149CCB515A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1107B018E43FBCC76CE9E800C389EFDB;
+			remoteInfo = Willow;
+		};
+		BF9635D344F7C6585CB65DD115416292 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C751D179DD234677CA9F2526A9B8289;
+			remoteInfo = KeychainAccess;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E89EEA2FB55F3125D23AB93FC94C39 /* ResourceSystemProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceSystemProperties.swift; path = AzureData/Source/Resources/ResourceSystemProperties.swift; sourceTree = "<group>"; };
+		07AAA22A2A392ECEAFDA08E23811E899 /* LogMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogMessage.swift; path = Source/LogMessage.swift; sourceTree = "<group>"; };
+		0C7DBF359483A897FD40814AF3330FBC /* StoredProcedure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoredProcedure.swift; path = AzureData/Source/Resources/StoredProcedure.swift; sourceTree = "<group>"; };
+		0DC781595B25140F3DD9D2205DFAB38F /* ResourceEncryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceEncryptor.swift; path = AzureData/Source/ResourceEncryptor.swift; sourceTree = "<group>"; };
+		0DF2F7306D73EE96E8DAA353FC90B4EF /* Willow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Willow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E02AB8CD4896FCB586B128085EF6F6D /* PermissionProviderConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionProviderConfiguration.swift; path = AzureData/Source/PermissionProviderConfiguration.swift; sourceTree = "<group>"; };
+		14B613A668F97ABCAD09F6D51E26645F /* ResourceTokenProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceTokenProvider.swift; path = AzureData/Source/ResourceTokenProvider.swift; sourceTree = "<group>"; };
+		15A72DBE1A0E2079889BFA133A282275 /* AzureCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AzureCore.xcconfig; sourceTree = "<group>"; };
+		171355A51F345495251973CED2766D56 /* Pods-SpaceFinder-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpaceFinder-frameworks.sh"; sourceTree = "<group>"; };
+		173936D0283DE48FC2256FA017292DBB /* CodableResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableResource.swift; path = AzureData/Source/Resources/CodableResource.swift; sourceTree = "<group>"; };
+		19ADF8B8BD0FD966092160C53C06D047 /* KeychainAccess-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-umbrella.h"; sourceTree = "<group>"; };
+		1BC5980AB7E82B7DAA116CE72C1F4EBD /* Conflict.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Conflict.swift; path = AzureData/Source/Resources/Conflict.swift; sourceTree = "<group>"; };
+		1F1E9A8CBB3DA39DA8CA08F661DD8F87 /* Offer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Offer.swift; path = AzureData/Source/Resources/Offer.swift; sourceTree = "<group>"; };
+		1F3E4EDCF97765133249EDD3EE29CD0D /* User.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = User.swift; path = AzureData/Source/Resources/User.swift; sourceTree = "<group>"; };
+		27FB85BA8F3AA037FBE20B205AF78008 /* ResourceRequestError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceRequestError.swift; path = AzureData/Source/Resources/ResourceRequestError.swift; sourceTree = "<group>"; };
+		284DD16F7C6AABB09247C8D3A2C8FBA1 /* DocumentCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentCollection.swift; path = AzureData/Source/Resources/DocumentCollection.swift; sourceTree = "<group>"; };
+		2B9F868AAC55FABD1F3E61599F1C7BBF /* Pods-SpaceFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpaceFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		2BBCBD56263593AAADE89F9282C28EE3 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Source/Logger.swift; sourceTree = "<group>"; };
+		2F06EDAED9F53936E1423F655AC19C8B /* ResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceType.swift; path = AzureData/Source/ResourceType.swift; sourceTree = "<group>"; };
+		31EFC6CF8420F86E90FB7D5702482595 /* AzureData-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AzureData-umbrella.h"; sourceTree = "<group>"; };
+		3267892F30E6DB16759DF4552018B3AE /* DateFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormat.swift; path = AzureCore/Source/DateFormat.swift; sourceTree = "<group>"; };
+		3402E547422F9AD060C6D71508293DC0 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = AzureCore/Source/Logger.swift; sourceTree = "<group>"; };
+		36B19BE977956E269AE680F10B177F84 /* Pods-SpaceFinder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SpaceFinder.modulemap"; sourceTree = "<group>"; };
+		36ED4AB26149C6F8274ECDB88BBA7413 /* AzureData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AzureData.swift; path = AzureData/Source/AzureData.swift; sourceTree = "<group>"; };
+		378E49B3C4E54B8742AFF19495FF6344 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D04A57627F884EB67A3CEE8084B4F3B /* Resources.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resources.swift; path = AzureData/Source/Resources/Resources.swift; sourceTree = "<group>"; };
+		438ADE0503BF27CA72B585E7C674C52A /* ResourceOracle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceOracle.swift; path = AzureData/Source/ResourceOracle.swift; sourceTree = "<group>"; };
+		474982C4C16511E2291A336454460377 /* AzureDataExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AzureDataExtensions.swift; path = AzureData/Source/AzureDataExtensions.swift; sourceTree = "<group>"; };
+		48824273B7DBD206B4DA7618A20B51D7 /* AzureCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AzureCore.framework; path = AzureCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A2A5151D617CAEABF10688312F8B162 /* Pods-SpaceFinder-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpaceFinder-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4A3F840997746DF08D77810E7E153EE4 /* ReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReachabilityManager.swift; path = AzureCore/Source/ReachabilityManager.swift; sourceTree = "<group>"; };
+		4D34EF3EEEA36F2E825DFEC574C14508 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E14EBD7505414BCFC734025EB5D3BBC /* AzureData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AzureData.h; path = AzureData/Source/AzureData.h; sourceTree = "<group>"; };
+		4EC14E67A411F3F19A5A4CD6F7F0B931 /* Attachment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attachment.swift; path = AzureData/Source/Resources/Attachment.swift; sourceTree = "<group>"; };
+		4F4D9644256F6EDF0F6B9CD4F1300890 /* KeychainAccess-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainAccess-dummy.m"; sourceTree = "<group>"; };
+		517F63E72BC97D1AEB81EA3C064F5A54 /* LogLevel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogLevel.swift; path = Source/LogLevel.swift; sourceTree = "<group>"; };
+		518A6410C7AC9CF0523335FA3EAD2DF9 /* Pods-SpaceFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpaceFinder.release.xcconfig"; sourceTree = "<group>"; };
+		520AA9FB540F191C6128694EB8DEAA28 /* DictionaryDocument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryDocument.swift; path = AzureData/Source/Resources/DictionaryDocument.swift; sourceTree = "<group>"; };
+		53D14AB20343C32F0F32998DC5BFE12D /* ResourceLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceLocation.swift; path = AzureData/Source/ResourceLocation.swift; sourceTree = "<group>"; };
+		563A6B437986B65EA754D8969CBEF210 /* UtilityExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UtilityExtensions.swift; path = AzureData/Source/UtilityExtensions.swift; sourceTree = "<group>"; };
+		5AC58C0F321569311FB9B10C76188EE3 /* AzureCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AzureCore-umbrella.h"; sourceTree = "<group>"; };
+		5AD110DA576B4CDF464361C7D26B8B23 /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = AzureCore/Source/Keychain.swift; sourceTree = "<group>"; };
+		61DBF1EE31B375EC46809DCD696291E5 /* AzureCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AzureCore-dummy.m"; sourceTree = "<group>"; };
+		6592A01D94FB630068675AEBF752D9C8 /* Trigger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Trigger.swift; path = AzureData/Source/Resources/Trigger.swift; sourceTree = "<group>"; };
+		66ACBF1516009AA0663D0F024930A3AA /* MSHttpHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MSHttpHeader.swift; path = AzureData/Source/MSHttpHeader.swift; sourceTree = "<group>"; };
+		674E1FC60C97952F23922352224EB387 /* KeychainAccess.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainAccess.xcconfig; sourceTree = "<group>"; };
+		69FFBB1A76B70FE6A1E28748AA53E22C /* Willow-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Willow-umbrella.h"; sourceTree = "<group>"; };
+		6B0DEEA1D0801B7DAEB618664DBF9C45 /* DocumentClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentClient.swift; path = AzureData/Source/DocumentClient.swift; sourceTree = "<group>"; };
+		6BC901E189C28FC699719BC935E378E9 /* ResourceWriteOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceWriteOperation.swift; path = AzureData/Source/ResourceWriteOperation.swift; sourceTree = "<group>"; };
+		6F2AB487A2F7B9255A47ACFE3E5647AD /* CryptoProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CryptoProvider.h; path = AzureCore/Source/CryptoProvider.h; sourceTree = "<group>"; };
+		714BE08552522C72036BD8DF047660CA /* PermissionMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionMode.swift; path = AzureData/Source/Resources/PermissionMode.swift; sourceTree = "<group>"; };
+		741220263009624BFCA2BCD45FFA09F3 /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Lib/KeychainAccess/Keychain.swift; sourceTree = "<group>"; };
+		7646816590CF44EDEAA5758106E7D51C /* Pods_SpaceFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SpaceFinder.framework; path = "Pods-SpaceFinder.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A17477EFBDF34C15F7F670C0CC9E35F /* Willow-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Willow-prefix.pch"; sourceTree = "<group>"; };
+		7AF68F969BBEA1179B9EA6361011D351 /* DocumentClientError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentClientError.swift; path = AzureData/Source/DocumentClientError.swift; sourceTree = "<group>"; };
+		85B375F945E9D3DD3080C8051951CD45 /* Pods-SpaceFinder-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpaceFinder-resources.sh"; sourceTree = "<group>"; };
+		898C0BAA5F3F14A6A2C8A4FEA39B57DD /* PermissionProviderError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionProviderError.swift; path = AzureData/Source/PermissionProviderError.swift; sourceTree = "<group>"; };
+		8AF759DDFDA42A583845C491DC083595 /* KeychainAccess.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeychainAccess.modulemap; sourceTree = "<group>"; };
+		8E7E8EB7FFC37D8CE6CBD5D98218027C /* PermissionCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionCache.swift; path = AzureData/Source/PermissionCache.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93D07C7849939CCF8746D668FAF6BFD8 /* Permission.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Permission.swift; path = AzureData/Source/Resources/Permission.swift; sourceTree = "<group>"; };
+		93D73951DDEEC036C2875C21115D5ADA /* Willow-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Willow-dummy.m"; sourceTree = "<group>"; };
+		955C91569FE1A0024C402FE590EBBE48 /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		990CB14138AF46C7BA8A195833A73BAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9A51E3EF903AF75C5228734EE7CF931D /* Document.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Document.swift; path = AzureData/Source/Resources/Document.swift; sourceTree = "<group>"; };
+		9EEF07698342528F8BACE4346082D7AD /* CodableDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableDictionary.swift; path = AzureData/Source/Resources/CodableDictionary.swift; sourceTree = "<group>"; };
+		A022D351F687FB5DA577B9EA23911C97 /* ResponseMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseMetadata.swift; path = AzureData/Source/Resources/ResponseMetadata.swift; sourceTree = "<group>"; };
+		A181CA69D3860DCCA625F3B03E49D003 /* HttpHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpHeader.swift; path = AzureCore/Source/HttpHeader.swift; sourceTree = "<group>"; };
+		A1B8919EDC6B2F4E819FA856C60EA1D5 /* AzureData.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AzureData.xcconfig; sourceTree = "<group>"; };
+		A7321559B773683961F614BB230FB3DC /* KeychainAccess-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-prefix.pch"; sourceTree = "<group>"; };
+		ADBD053F2751F78484D9104A1AA84E25 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFEDD6029A8C58561C7175D4E22267E8 /* SupportsPermissionToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SupportsPermissionToken.swift; path = AzureData/Source/SupportsPermissionToken.swift; sourceTree = "<group>"; };
+		B1EEDD21E74B4BE8B513ADE53497D1AD /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeychainAccess.framework; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6CAEDD3CC1BEF4A54BFDA5D22D50041 /* Database.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Database.swift; path = AzureData/Source/Resources/Database.swift; sourceTree = "<group>"; };
+		B73446C03D1FF92013A18B5B96FC8D06 /* AzureCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AzureCore-prefix.pch"; sourceTree = "<group>"; };
+		B823AEC9679CC12ACC497C6BA1FEA234 /* AzureData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AzureData.framework; path = AzureData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA2DC9358CC8C738B01C474A6DA3AAF5 /* LogModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogModifier.swift; path = Source/LogModifier.swift; sourceTree = "<group>"; };
+		BB43BB93DAC1882384C596B4EE92392F /* CodableResources.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableResources.swift; path = AzureData/Source/Resources/CodableResources.swift; sourceTree = "<group>"; };
+		BD4D07D4571A37643671A9C986382BCF /* ResourceWriteOperationQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceWriteOperationQueue.swift; path = AzureData/Source/ResourceWriteOperationQueue.swift; sourceTree = "<group>"; };
+		BEEA6872F46D50CD146ABC5C29BEF3B8 /* AzureCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AzureCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1C21341A0843B4535B31793B8D51E3E /* Pods-SpaceFinder-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpaceFinder-acknowledgements.plist"; sourceTree = "<group>"; };
+		C34FAD2B4491DD6EAD5227A87BC9FC26 /* Pods-SpaceFinder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpaceFinder-dummy.m"; sourceTree = "<group>"; };
+		C375AD049E0BB7D96CDD06910982422C /* PermissionProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionProvider.swift; path = AzureData/Source/PermissionProvider.swift; sourceTree = "<group>"; };
+		C5C2B7B7913F03CE36DED0E41ECE8B18 /* AzureKeys.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AzureKeys.swift; path = AzureCore/Source/AzureKeys.swift; sourceTree = "<group>"; };
+		C7F198C6D85AD0AAC57EFC61B3894D78 /* ResourceCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceCache.swift; path = AzureData/Source/ResourceCache.swift; sourceTree = "<group>"; };
+		C97C01738F6B9FFA5D09D540F117AD57 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9F0715AED92D92BD183A5F30FCDB272 /* UserDefinedFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserDefinedFunction.swift; path = AzureData/Source/Resources/UserDefinedFunction.swift; sourceTree = "<group>"; };
+		CAD34D0CBD7877A208B4F08E7E9DFD10 /* HttpMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpMethod.swift; path = AzureCore/Source/HttpMethod.swift; sourceTree = "<group>"; };
+		CB46C33E621F159C6C195969B9B2D971 /* DatabaseAccount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseAccount.swift; path = AzureData/Source/Resources/DatabaseAccount.swift; sourceTree = "<group>"; };
+		CC8625E05A41BDD52B64E24EFC038C2D /* ReachabilityManagerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReachabilityManagerType.swift; path = AzureCore/Source/ReachabilityManagerType.swift; sourceTree = "<group>"; };
+		CEEC57F559EECD134FF751D956397ABD /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = AzureData/Source/Response.swift; sourceTree = "<group>"; };
+		D1B1EE26E71F9CF73A6C90409086CF81 /* AzureData-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AzureData-prefix.pch"; sourceTree = "<group>"; };
+		D207EC1D5F0F03BA4DB7BE2443371CE1 /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = AzureData/Source/Query.swift; sourceTree = "<group>"; };
+		D291381F197F75339EE195B6C7BC46FC /* Pods-SpaceFinder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SpaceFinder-umbrella.h"; sourceTree = "<group>"; };
+		D867AD96C2F7BB1CDCC81950319A8AD3 /* ConflictStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConflictStrategy.swift; path = AzureData/Source/ConflictStrategy.swift; sourceTree = "<group>"; };
+		DA308BE29FA0AB0276CF64F283BB99EA /* CryptoProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CryptoProvider.m; path = AzureCore/Source/CryptoProvider.m; sourceTree = "<group>"; };
+		DD5C42A724CE8F7F185B0FFB8AB98851 /* AzureData.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AzureData.modulemap; sourceTree = "<group>"; };
+		E13083AB82ACAB85E8553B32A373763C /* Willow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Willow.framework; path = Willow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2502BF113A6890A1D557CD8C88A429E /* AzureData-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AzureData-dummy.m"; sourceTree = "<group>"; };
+		E32718E178EC936D424AE72A6EEF6D91 /* Willow.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Willow.xcconfig; sourceTree = "<group>"; };
+		E9E486AD86D5C2E59A73A0BEDC868BC4 /* LogWriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogWriter.swift; path = Source/LogWriter.swift; sourceTree = "<group>"; };
+		EBBBA9131955382144FEB5A069B14B8F /* ResourceError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceError.swift; path = AzureData/Source/Resources/ResourceError.swift; sourceTree = "<group>"; };
+		EC34C67FD7C653A8897609A98BE1FEC4 /* HttpStatusCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpStatusCode.swift; path = AzureCore/Source/HttpStatusCode.swift; sourceTree = "<group>"; };
+		EDD680F6CCF7A955068695416C4AA668 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F12542841D1F044020680618B1E14FEA /* AzureCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AzureCore.modulemap; sourceTree = "<group>"; };
+		F53F635E36EAD8C666D4307583E32C30 /* Willow.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Willow.modulemap; sourceTree = "<group>"; };
+		FB6D3EDCC709AE989E6329C5E492F29E /* DocumentClientExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentClientExtensions.swift; path = AzureData/Source/DocumentClientExtensions.swift; sourceTree = "<group>"; };
+		FDFE7615E688074B9CEF13842DEF9894 /* AzureCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AzureCore.h; path = AzureCore/Source/AzureCore.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28CF955DC84A6A49EDC7E61D538003CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8ADB818973FD8CFC7B07E75C4F50DAE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		751ECB02A11BC172D1DCF3728C29CDCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC1C93AE320964087F3236AD45043913 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0C6DC259A31C5246B52E9E81592F569 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F469FA2CE4BA1F5D39F75A05B47A91D4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2CC02EA76691F8481D602BF41E218FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9223C3C9B8F6252C6606A7F616E83CEF /* Foundation.framework in Frameworks */,
+				578F9F0D2AF8FB5B1DC604D1D8CBE32C /* KeychainAccess.framework in Frameworks */,
+				843F540B46C430382EDB0ACB74B98E76 /* Willow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD08E7F0220418F112EBC05F3930D17F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F46623BE810A12DD97CD32C386E614D /* AzureCore.framework in Frameworks */,
+				1E899B351FFF307EAEFC6A5E74FDD666 /* Foundation.framework in Frameworks */,
+				4CD0D326C55C4363B8EE82939FEA4F50 /* KeychainAccess.framework in Frameworks */,
+				6977DC463A5BF607EFA4133140CFC2F6 /* Willow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		009E496A8BAA48CA7F88F58FDC2759E9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD5C42A724CE8F7F185B0FFB8AB98851 /* AzureData.modulemap */,
+				A1B8919EDC6B2F4E819FA856C60EA1D5 /* AzureData.xcconfig */,
+				E2502BF113A6890A1D557CD8C88A429E /* AzureData-dummy.m */,
+				D1B1EE26E71F9CF73A6C90409086CF81 /* AzureData-prefix.pch */,
+				31EFC6CF8420F86E90FB7D5702482595 /* AzureData-umbrella.h */,
+				C97C01738F6B9FFA5D09D540F117AD57 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AzureData";
+			sourceTree = "<group>";
+		};
+		140AED20185050CCE0F59D98F6F77A12 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				990CB14138AF46C7BA8A195833A73BAC /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		1A62D274E3B4E5A23241226555C8D914 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACC4C188BD22CC8014DCAD1ADB4063C0 /* Pods-SpaceFinder */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		257777C24AE535BC9D442C8D0787AC66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEEA6872F46D50CD146ABC5C29BEF3B8 /* AzureCore.framework */,
+				955C91569FE1A0024C402FE590EBBE48 /* KeychainAccess.framework */,
+				0DF2F7306D73EE96E8DAA353FC90B4EF /* Willow.framework */,
+				140AED20185050CCE0F59D98F6F77A12 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		568F797FF758D1377E835B6DDF60AF5C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D34EF3EEEA36F2E825DFEC574C14508 /* Info.plist */,
+				F53F635E36EAD8C666D4307583E32C30 /* Willow.modulemap */,
+				E32718E178EC936D424AE72A6EEF6D91 /* Willow.xcconfig */,
+				93D73951DDEEC036C2875C21115D5ADA /* Willow-dummy.m */,
+				7A17477EFBDF34C15F7F670C0CC9E35F /* Willow-prefix.pch */,
+				69FFBB1A76B70FE6A1E28748AA53E22C /* Willow-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Willow";
+			sourceTree = "<group>";
+		};
+		5857951BD14E49180931FAE561E814D4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F12542841D1F044020680618B1E14FEA /* AzureCore.modulemap */,
+				15A72DBE1A0E2079889BFA133A282275 /* AzureCore.xcconfig */,
+				61DBF1EE31B375EC46809DCD696291E5 /* AzureCore-dummy.m */,
+				B73446C03D1FF92013A18B5B96FC8D06 /* AzureCore-prefix.pch */,
+				5AC58C0F321569311FB9B10C76188EE3 /* AzureCore-umbrella.h */,
+				ADBD053F2751F78484D9104A1AA84E25 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AzureCore";
+			sourceTree = "<group>";
+		};
+		74056498C3367CD2B9F8B276C80DF7A1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDD680F6CCF7A955068695416C4AA668 /* Info.plist */,
+				8AF759DDFDA42A583845C491DC083595 /* KeychainAccess.modulemap */,
+				674E1FC60C97952F23922352224EB387 /* KeychainAccess.xcconfig */,
+				4F4D9644256F6EDF0F6B9CD4F1300890 /* KeychainAccess-dummy.m */,
+				A7321559B773683961F614BB230FB3DC /* KeychainAccess-prefix.pch */,
+				19ADF8B8BD0FD966092160C53C06D047 /* KeychainAccess-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KeychainAccess";
+			sourceTree = "<group>";
+		};
+		7B84B06DC60B38CBF51DA7D484EA8DE8 /* Willow */ = {
+			isa = PBXGroup;
+			children = (
+				2BBCBD56263593AAADE89F9282C28EE3 /* Logger.swift */,
+				517F63E72BC97D1AEB81EA3C064F5A54 /* LogLevel.swift */,
+				07AAA22A2A392ECEAFDA08E23811E899 /* LogMessage.swift */,
+				BA2DC9358CC8C738B01C474A6DA3AAF5 /* LogModifier.swift */,
+				E9E486AD86D5C2E59A73A0BEDC868BC4 /* LogWriter.swift */,
+				568F797FF758D1377E835B6DDF60AF5C /* Support Files */,
+			);
+			name = Willow;
+			path = Willow;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				257777C24AE535BC9D442C8D0787AC66 /* Frameworks */,
+				CF1DEB2D384BCCBFE621F0ECFDAA63DA /* Pods */,
+				E342B401CF73A67F7D357BAC31ADA187 /* Products */,
+				1A62D274E3B4E5A23241226555C8D914 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		ACC4C188BD22CC8014DCAD1ADB4063C0 /* Pods-SpaceFinder */ = {
+			isa = PBXGroup;
+			children = (
+				378E49B3C4E54B8742AFF19495FF6344 /* Info.plist */,
+				36B19BE977956E269AE680F10B177F84 /* Pods-SpaceFinder.modulemap */,
+				4A2A5151D617CAEABF10688312F8B162 /* Pods-SpaceFinder-acknowledgements.markdown */,
+				C1C21341A0843B4535B31793B8D51E3E /* Pods-SpaceFinder-acknowledgements.plist */,
+				C34FAD2B4491DD6EAD5227A87BC9FC26 /* Pods-SpaceFinder-dummy.m */,
+				171355A51F345495251973CED2766D56 /* Pods-SpaceFinder-frameworks.sh */,
+				85B375F945E9D3DD3080C8051951CD45 /* Pods-SpaceFinder-resources.sh */,
+				D291381F197F75339EE195B6C7BC46FC /* Pods-SpaceFinder-umbrella.h */,
+				2B9F868AAC55FABD1F3E61599F1C7BBF /* Pods-SpaceFinder.debug.xcconfig */,
+				518A6410C7AC9CF0523335FA3EAD2DF9 /* Pods-SpaceFinder.release.xcconfig */,
+			);
+			name = "Pods-SpaceFinder";
+			path = "Target Support Files/Pods-SpaceFinder";
+			sourceTree = "<group>";
+		};
+		AE0DED47C0DF382AB5AD0282FB85D62F /* AzureCore */ = {
+			isa = PBXGroup;
+			children = (
+				FDFE7615E688074B9CEF13842DEF9894 /* AzureCore.h */,
+				C5C2B7B7913F03CE36DED0E41ECE8B18 /* AzureKeys.swift */,
+				6F2AB487A2F7B9255A47ACFE3E5647AD /* CryptoProvider.h */,
+				DA308BE29FA0AB0276CF64F283BB99EA /* CryptoProvider.m */,
+				3267892F30E6DB16759DF4552018B3AE /* DateFormat.swift */,
+				A181CA69D3860DCCA625F3B03E49D003 /* HttpHeader.swift */,
+				CAD34D0CBD7877A208B4F08E7E9DFD10 /* HttpMethod.swift */,
+				EC34C67FD7C653A8897609A98BE1FEC4 /* HttpStatusCode.swift */,
+				5AD110DA576B4CDF464361C7D26B8B23 /* Keychain.swift */,
+				3402E547422F9AD060C6D71508293DC0 /* Logger.swift */,
+				4A3F840997746DF08D77810E7E153EE4 /* ReachabilityManager.swift */,
+				CC8625E05A41BDD52B64E24EFC038C2D /* ReachabilityManagerType.swift */,
+				5857951BD14E49180931FAE561E814D4 /* Support Files */,
+			);
+			name = AzureCore;
+			path = AzureCore;
+			sourceTree = "<group>";
+		};
+		CF1DEB2D384BCCBFE621F0ECFDAA63DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE0DED47C0DF382AB5AD0282FB85D62F /* AzureCore */,
+				DC8F7FF5EA5FD588A657B48327CB20B9 /* AzureData */,
+				F9D53FC7112A2C1973B2A85E742C9FB4 /* KeychainAccess */,
+				7B84B06DC60B38CBF51DA7D484EA8DE8 /* Willow */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC8F7FF5EA5FD588A657B48327CB20B9 /* AzureData */ = {
+			isa = PBXGroup;
+			children = (
+				4EC14E67A411F3F19A5A4CD6F7F0B931 /* Attachment.swift */,
+				4E14EBD7505414BCFC734025EB5D3BBC /* AzureData.h */,
+				36ED4AB26149C6F8274ECDB88BBA7413 /* AzureData.swift */,
+				474982C4C16511E2291A336454460377 /* AzureDataExtensions.swift */,
+				9EEF07698342528F8BACE4346082D7AD /* CodableDictionary.swift */,
+				173936D0283DE48FC2256FA017292DBB /* CodableResource.swift */,
+				BB43BB93DAC1882384C596B4EE92392F /* CodableResources.swift */,
+				1BC5980AB7E82B7DAA116CE72C1F4EBD /* Conflict.swift */,
+				D867AD96C2F7BB1CDCC81950319A8AD3 /* ConflictStrategy.swift */,
+				B6CAEDD3CC1BEF4A54BFDA5D22D50041 /* Database.swift */,
+				CB46C33E621F159C6C195969B9B2D971 /* DatabaseAccount.swift */,
+				520AA9FB540F191C6128694EB8DEAA28 /* DictionaryDocument.swift */,
+				9A51E3EF903AF75C5228734EE7CF931D /* Document.swift */,
+				6B0DEEA1D0801B7DAEB618664DBF9C45 /* DocumentClient.swift */,
+				7AF68F969BBEA1179B9EA6361011D351 /* DocumentClientError.swift */,
+				FB6D3EDCC709AE989E6329C5E492F29E /* DocumentClientExtensions.swift */,
+				284DD16F7C6AABB09247C8D3A2C8FBA1 /* DocumentCollection.swift */,
+				66ACBF1516009AA0663D0F024930A3AA /* MSHttpHeader.swift */,
+				1F1E9A8CBB3DA39DA8CA08F661DD8F87 /* Offer.swift */,
+				93D07C7849939CCF8746D668FAF6BFD8 /* Permission.swift */,
+				8E7E8EB7FFC37D8CE6CBD5D98218027C /* PermissionCache.swift */,
+				714BE08552522C72036BD8DF047660CA /* PermissionMode.swift */,
+				C375AD049E0BB7D96CDD06910982422C /* PermissionProvider.swift */,
+				0E02AB8CD4896FCB586B128085EF6F6D /* PermissionProviderConfiguration.swift */,
+				898C0BAA5F3F14A6A2C8A4FEA39B57DD /* PermissionProviderError.swift */,
+				D207EC1D5F0F03BA4DB7BE2443371CE1 /* Query.swift */,
+				C7F198C6D85AD0AAC57EFC61B3894D78 /* ResourceCache.swift */,
+				0DC781595B25140F3DD9D2205DFAB38F /* ResourceEncryptor.swift */,
+				EBBBA9131955382144FEB5A069B14B8F /* ResourceError.swift */,
+				53D14AB20343C32F0F32998DC5BFE12D /* ResourceLocation.swift */,
+				438ADE0503BF27CA72B585E7C674C52A /* ResourceOracle.swift */,
+				27FB85BA8F3AA037FBE20B205AF78008 /* ResourceRequestError.swift */,
+				3D04A57627F884EB67A3CEE8084B4F3B /* Resources.swift */,
+				00E89EEA2FB55F3125D23AB93FC94C39 /* ResourceSystemProperties.swift */,
+				14B613A668F97ABCAD09F6D51E26645F /* ResourceTokenProvider.swift */,
+				2F06EDAED9F53936E1423F655AC19C8B /* ResourceType.swift */,
+				6BC901E189C28FC699719BC935E378E9 /* ResourceWriteOperation.swift */,
+				BD4D07D4571A37643671A9C986382BCF /* ResourceWriteOperationQueue.swift */,
+				CEEC57F559EECD134FF751D956397ABD /* Response.swift */,
+				A022D351F687FB5DA577B9EA23911C97 /* ResponseMetadata.swift */,
+				0C7DBF359483A897FD40814AF3330FBC /* StoredProcedure.swift */,
+				AFEDD6029A8C58561C7175D4E22267E8 /* SupportsPermissionToken.swift */,
+				6592A01D94FB630068675AEBF752D9C8 /* Trigger.swift */,
+				1F3E4EDCF97765133249EDD3EE29CD0D /* User.swift */,
+				C9F0715AED92D92BD183A5F30FCDB272 /* UserDefinedFunction.swift */,
+				563A6B437986B65EA754D8969CBEF210 /* UtilityExtensions.swift */,
+				009E496A8BAA48CA7F88F58FDC2759E9 /* Support Files */,
+			);
+			name = AzureData;
+			path = AzureData;
+			sourceTree = "<group>";
+		};
+		E342B401CF73A67F7D357BAC31ADA187 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48824273B7DBD206B4DA7618A20B51D7 /* AzureCore.framework */,
+				B823AEC9679CC12ACC497C6BA1FEA234 /* AzureData.framework */,
+				B1EEDD21E74B4BE8B513ADE53497D1AD /* KeychainAccess.framework */,
+				7646816590CF44EDEAA5758106E7D51C /* Pods_SpaceFinder.framework */,
+				E13083AB82ACAB85E8553B32A373763C /* Willow.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9D53FC7112A2C1973B2A85E742C9FB4 /* KeychainAccess */ = {
+			isa = PBXGroup;
+			children = (
+				741220263009624BFCA2BCD45FFA09F3 /* Keychain.swift */,
+				74056498C3367CD2B9F8B276C80DF7A1 /* Support Files */,
+			);
+			name = KeychainAccess;
+			path = KeychainAccess;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3F68F9810F4F4485DF42EAE72F53C977 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F049A7C84C63D6B07AB4E038B5F9BD0 /* AzureCore-umbrella.h in Headers */,
+				AAE8A5732459A36D52D8A6DACA777FE8 /* AzureCore.h in Headers */,
+				230C379437CB356C8006679DA585D78A /* CryptoProvider.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71734874DF9111BE03009A0E30E3D808 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D347D30D0EDF3377F1463E4CEB818655 /* Pods-SpaceFinder-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		833A13B799499796EAC9B62F1A7E93A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C099E30536CECF3EFA097BB9399E8ACB /* KeychainAccess-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EED7491CE4130FB4B7E8E37D7C6C011 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				295250CF0BDD5EA3B3488047D71238E0 /* AzureData-umbrella.h in Headers */,
+				0CE9BD4158436C2645BF4F01E24BA293 /* AzureData.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2544570F61F6FFC433E3024122A274E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FE0B62A172DEF17DC4E240C0674AA43 /* Willow-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1107B018E43FBCC76CE9E800C389EFDB /* Willow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0738763DC1A9DCB6C4EF542A55BE7BB9 /* Build configuration list for PBXNativeTarget "Willow" */;
+			buildPhases = (
+				F9DE0858BE45BB940D76BE467FC3E06F /* Sources */,
+				A0C6DC259A31C5246B52E9E81592F569 /* Frameworks */,
+				C2544570F61F6FFC433E3024122A274E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Willow;
+			productName = Willow;
+			productReference = E13083AB82ACAB85E8553B32A373763C /* Willow.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3C751D179DD234677CA9F2526A9B8289 /* KeychainAccess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC637884A270B3245A9093E401C43CCE /* Build configuration list for PBXNativeTarget "KeychainAccess" */;
+			buildPhases = (
+				B9DDA3F52964A3163263F30F64EE97FC /* Sources */,
+				28CF955DC84A6A49EDC7E61D538003CF /* Frameworks */,
+				833A13B799499796EAC9B62F1A7E93A7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeychainAccess;
+			productName = KeychainAccess;
+			productReference = B1EEDD21E74B4BE8B513ADE53497D1AD /* KeychainAccess.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8EF53D56E10C35A60057740B0A6C4D56 /* AzureCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E30C6831F8F165A3BCBE71A36ACF60E /* Build configuration list for PBXNativeTarget "AzureCore" */;
+			buildPhases = (
+				2CA6A1CAFB4A7FBF3268A79E8D2290C3 /* Sources */,
+				A2CC02EA76691F8481D602BF41E218FB /* Frameworks */,
+				3F68F9810F4F4485DF42EAE72F53C977 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB814F934CF26F3F52499833FD36D21B /* PBXTargetDependency */,
+				453352E081B562631664F664743BE2F8 /* PBXTargetDependency */,
+			);
+			name = AzureCore;
+			productName = AzureCore;
+			productReference = 48824273B7DBD206B4DA7618A20B51D7 /* AzureCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C58C6CB677CE4DE6DB2496CC6E54F180 /* AzureData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83BE23629FA13FF2A38E0D10256A16D3 /* Build configuration list for PBXNativeTarget "AzureData" */;
+			buildPhases = (
+				C65BB7ED48BA6106BA284667686D929D /* Sources */,
+				DD08E7F0220418F112EBC05F3930D17F /* Frameworks */,
+				9EED7491CE4130FB4B7E8E37D7C6C011 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D496DCFC0748D9C4D3516F82B6D8048F /* PBXTargetDependency */,
+				02272CA2AAA6B0AC28763627E764BA77 /* PBXTargetDependency */,
+				24E8FEF06F2BEDADEF6026DF6FCBBE3E /* PBXTargetDependency */,
+			);
+			name = AzureData;
+			productName = AzureData;
+			productReference = B823AEC9679CC12ACC497C6BA1FEA234 /* AzureData.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F051C59D4C4DC3C0A405A82FD5682234 /* Pods-SpaceFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B58EF2905820C9AE08BB3E722EEDFA5C /* Build configuration list for PBXNativeTarget "Pods-SpaceFinder" */;
+			buildPhases = (
+				77B8890D50A21563B88CFC8CE1835876 /* Sources */,
+				751ECB02A11BC172D1DCF3728C29CDCE /* Frameworks */,
+				71734874DF9111BE03009A0E30E3D808 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E33F4198D550C2AEDBA2CEEEAE97F8CA /* PBXTargetDependency */,
+				EB16A239533B3F1A3F1664CF4BF2EFC0 /* PBXTargetDependency */,
+				C360E79049C11F272BE9491E31172301 /* PBXTargetDependency */,
+				27B8B6ED7D4FD81A06FF8DE363866B9E /* PBXTargetDependency */,
+			);
+			name = "Pods-SpaceFinder";
+			productName = "Pods-SpaceFinder";
+			productReference = 7646816590CF44EDEAA5758106E7D51C /* Pods_SpaceFinder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E342B401CF73A67F7D357BAC31ADA187 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8EF53D56E10C35A60057740B0A6C4D56 /* AzureCore */,
+				C58C6CB677CE4DE6DB2496CC6E54F180 /* AzureData */,
+				3C751D179DD234677CA9F2526A9B8289 /* KeychainAccess */,
+				F051C59D4C4DC3C0A405A82FD5682234 /* Pods-SpaceFinder */,
+				1107B018E43FBCC76CE9E800C389EFDB /* Willow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CA6A1CAFB4A7FBF3268A79E8D2290C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A6715498E908FBF03354AA63A3ED2B1 /* AzureCore-dummy.m in Sources */,
+				103366D85E868476729D9A9C5A3D4323 /* AzureKeys.swift in Sources */,
+				A01EE2A464D2FBDBF4A1B3CD18D02E40 /* CryptoProvider.m in Sources */,
+				B5B93E1256D287ADCD08B90F69C16F9E /* DateFormat.swift in Sources */,
+				A2A1058DFFF2ED92A814487C349093BF /* HttpHeader.swift in Sources */,
+				B949C56DC14D56C02BB3659EF5954581 /* HttpMethod.swift in Sources */,
+				F8E0205F86E6EA3249AFC14B6BED6FD8 /* HttpStatusCode.swift in Sources */,
+				E9167D7B8822A6704A930F65AD779B27 /* Keychain.swift in Sources */,
+				195F926185AE1A69822E759768E12050 /* Logger.swift in Sources */,
+				A0D60E15C249953D0DF3428100FCC8C5 /* ReachabilityManager.swift in Sources */,
+				B75E62AD90EE229FE2DB09A50621B704 /* ReachabilityManagerType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77B8890D50A21563B88CFC8CE1835876 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457BB1C16FD87FA5BD9220FF82736F3A /* Pods-SpaceFinder-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9DDA3F52964A3163263F30F64EE97FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94937BEAAAEE94B9509128D19BAD17A1 /* Keychain.swift in Sources */,
+				58E23CEA28183C9F4D5D5215A1F59742 /* KeychainAccess-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C65BB7ED48BA6106BA284667686D929D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8388663AF4C046C26C2AA05E26FEA9D1 /* Attachment.swift in Sources */,
+				6FB555F57CEF1AA09A9F1463B4333A18 /* AzureData-dummy.m in Sources */,
+				39CF21C785472CA79625A5408BDD0C35 /* AzureData.swift in Sources */,
+				35EE92E17FB231E3AB45F5B71BC24093 /* AzureDataExtensions.swift in Sources */,
+				0E746EB66293D5657F22B141E38DE212 /* CodableDictionary.swift in Sources */,
+				6EC841821B0570EE3DE7F4C927CCA72E /* CodableResource.swift in Sources */,
+				E449F246A61A3EECC67806BA39FC2125 /* CodableResources.swift in Sources */,
+				B8F749E88761A418BDD69E5195223FC0 /* Conflict.swift in Sources */,
+				42A24EDF81AD7C9A66FFAD4A027CFB29 /* ConflictStrategy.swift in Sources */,
+				A427A4E4F4FE7DCED803ECF9E66920DA /* Database.swift in Sources */,
+				918D8C04A23FACBEF4BB5E16BB3141D8 /* DatabaseAccount.swift in Sources */,
+				050E077361AD33C37081AB8628158530 /* DictionaryDocument.swift in Sources */,
+				DB43AA4774CBD6CAB0216982D8EDC8F8 /* Document.swift in Sources */,
+				B95F84217FEA98B15EF677E83F095CAA /* DocumentClient.swift in Sources */,
+				165B6523D28A4B1B6A04D673CB42F63E /* DocumentClientError.swift in Sources */,
+				20517763C255616D1779B73C58B70950 /* DocumentClientExtensions.swift in Sources */,
+				9297761AF6BF27350BF5EAA4E174E3F5 /* DocumentCollection.swift in Sources */,
+				B4958B014AE8A88A355CA69EF41136B7 /* MSHttpHeader.swift in Sources */,
+				86A476EEF3DEDD2E167A4B18304D99F2 /* Offer.swift in Sources */,
+				75BAB1D347342BBD912096B239C9C38F /* Permission.swift in Sources */,
+				B77B83E52D1F0827F614452A061C3018 /* PermissionCache.swift in Sources */,
+				152222283E318F2E97DCBC9C9A306D59 /* PermissionMode.swift in Sources */,
+				CB30BC39FD7972FA79EF0155F3BB8DFC /* PermissionProvider.swift in Sources */,
+				C12A25D204E6C7CF0F3DED16CA4496CA /* PermissionProviderConfiguration.swift in Sources */,
+				86C791E5941EDAC4BDBDAF09590AA2ED /* PermissionProviderError.swift in Sources */,
+				07C8BCC665121C82B5B8427731C56790 /* Query.swift in Sources */,
+				4AD1DF870DB6C26144D7497668162D60 /* ResourceCache.swift in Sources */,
+				6E7710997F12131E975910661831B25D /* ResourceEncryptor.swift in Sources */,
+				204EDD6DEC20DF992AE75EA20CF713DA /* ResourceError.swift in Sources */,
+				4A37CD6ABD63F5465E85E7C0ECAC4459 /* ResourceLocation.swift in Sources */,
+				71C45C7B9BD17BB1BD599AA3C68A90BF /* ResourceOracle.swift in Sources */,
+				E3EB1974D71BFFE907D5AAFD13865DC1 /* ResourceRequestError.swift in Sources */,
+				1682B00C48C7EA937A1A672F7657BDDC /* Resources.swift in Sources */,
+				E960A30BCD7A294C51024C853E8B9C75 /* ResourceSystemProperties.swift in Sources */,
+				8E4118110A54FE4A4F49B83A884D42E4 /* ResourceTokenProvider.swift in Sources */,
+				1B8F850D336CF9531BF5832B641F57BE /* ResourceType.swift in Sources */,
+				532CD31F611FE1985F33C01543DF3865 /* ResourceWriteOperation.swift in Sources */,
+				E5FE83481A0FB2C183A89F9231A22992 /* ResourceWriteOperationQueue.swift in Sources */,
+				BF137F9FABDB91EC67FE72A55AC737E0 /* Response.swift in Sources */,
+				BB153C3F9019B0877C892B4C5B1276E8 /* ResponseMetadata.swift in Sources */,
+				A7A0A4F2806B8D3A01E75817B1F8D0F9 /* StoredProcedure.swift in Sources */,
+				D8C1976A040860B8F8508434BC0A8533 /* SupportsPermissionToken.swift in Sources */,
+				4A5BBCD6E77CBE1F5564BDDAD43DCC5B /* Trigger.swift in Sources */,
+				4F7DA5DC8845079ABBB76602983A85C6 /* User.swift in Sources */,
+				7381A8D50715322DC3A2206BAA0187F1 /* UserDefinedFunction.swift in Sources */,
+				AD4FACBD1F166BC7A6634B2F64C96DEE /* UtilityExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9DE0858BE45BB940D76BE467FC3E06F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				604F3CF9BD74DAC6989D3829BE9497A5 /* Logger.swift in Sources */,
+				56C05E4E2B66A8B9E2FCE9DD56CB2034 /* LogLevel.swift in Sources */,
+				5B93B744EF30EC5DF4CE4BABFE7909C0 /* LogMessage.swift in Sources */,
+				40884DB306E216DFC300F3477E7D55C2 /* LogModifier.swift in Sources */,
+				A35C8E2B93CB53F48038ADD796C11A1D /* LogWriter.swift in Sources */,
+				CDF428ADC25BDB5E714B673EFBDE3A2D /* Willow-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02272CA2AAA6B0AC28763627E764BA77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeychainAccess;
+			target = 3C751D179DD234677CA9F2526A9B8289 /* KeychainAccess */;
+			targetProxy = BF9635D344F7C6585CB65DD115416292 /* PBXContainerItemProxy */;
+		};
+		24E8FEF06F2BEDADEF6026DF6FCBBE3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Willow;
+			target = 1107B018E43FBCC76CE9E800C389EFDB /* Willow */;
+			targetProxy = 8A3E8545425C2C9F4CE641EE60B5395A /* PBXContainerItemProxy */;
+		};
+		27B8B6ED7D4FD81A06FF8DE363866B9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Willow;
+			target = 1107B018E43FBCC76CE9E800C389EFDB /* Willow */;
+			targetProxy = 97973A1BB2149FBDDDDF34149CCB515A /* PBXContainerItemProxy */;
+		};
+		453352E081B562631664F664743BE2F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Willow;
+			target = 1107B018E43FBCC76CE9E800C389EFDB /* Willow */;
+			targetProxy = 845C705EC760BE766B18B38042BA184B /* PBXContainerItemProxy */;
+		};
+		AB814F934CF26F3F52499833FD36D21B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeychainAccess;
+			target = 3C751D179DD234677CA9F2526A9B8289 /* KeychainAccess */;
+			targetProxy = 910E608BF27C762A96BE2F3D351034DE /* PBXContainerItemProxy */;
+		};
+		C360E79049C11F272BE9491E31172301 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeychainAccess;
+			target = 3C751D179DD234677CA9F2526A9B8289 /* KeychainAccess */;
+			targetProxy = 26902583BF695CEC2350A326265A1CD8 /* PBXContainerItemProxy */;
+		};
+		D496DCFC0748D9C4D3516F82B6D8048F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AzureCore;
+			target = 8EF53D56E10C35A60057740B0A6C4D56 /* AzureCore */;
+			targetProxy = 3AD0913CC4600078DBA3964FB49305F3 /* PBXContainerItemProxy */;
+		};
+		E33F4198D550C2AEDBA2CEEEAE97F8CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AzureCore;
+			target = 8EF53D56E10C35A60057740B0A6C4D56 /* AzureCore */;
+			targetProxy = 1F36B7756D9B917D13A1C02BD2CB9E8D /* PBXContainerItemProxy */;
+		};
+		EB16A239533B3F1A3F1664CF4BF2EFC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AzureData;
+			target = C58C6CB677CE4DE6DB2496CC6E54F180 /* AzureData */;
+			targetProxy = 0B64ABA4F691CDE74A1259DA20D62F28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		053BD67DAB0AD3D4303C398B9A58F3FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1B8919EDC6B2F4E819FA856C60EA1D5 /* AzureData.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AzureData/AzureData-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AzureData/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AzureData/AzureData.modulemap";
+				PRODUCT_MODULE_NAME = AzureData;
+				PRODUCT_NAME = AzureData;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		1BDBE4DC8A94A91E068AEA1A11112724 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1B8919EDC6B2F4E819FA856C60EA1D5 /* AzureData.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AzureData/AzureData-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AzureData/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AzureData/AzureData.modulemap";
+				PRODUCT_MODULE_NAME = AzureData;
+				PRODUCT_NAME = AzureData;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3DF22FEB8C9869F9583EF0BECD603A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E32718E178EC936D424AE72A6EEF6D91 /* Willow.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Willow/Willow-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Willow/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Willow/Willow.modulemap";
+				PRODUCT_MODULE_NAME = Willow;
+				PRODUCT_NAME = Willow;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		47320927BE012193732A6FA1D20F0B33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15A72DBE1A0E2079889BFA133A282275 /* AzureCore.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AzureCore/AzureCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AzureCore/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AzureCore/AzureCore.modulemap";
+				PRODUCT_MODULE_NAME = AzureCore;
+				PRODUCT_NAME = AzureCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5DD16891A3A6CC6275ECD4989BE10FAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 518A6410C7AC9CF0523335FA3EAD2DF9 /* Pods-SpaceFinder.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SpaceFinder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SpaceFinder/Pods-SpaceFinder.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6ECB3B5AD10E51022BDCC010D1DE9601 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E32718E178EC936D424AE72A6EEF6D91 /* Willow.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Willow/Willow-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Willow/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Willow/Willow.modulemap";
+				PRODUCT_MODULE_NAME = Willow;
+				PRODUCT_NAME = Willow;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7B0EE1FDCEECB6C33C68BE500F57F798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B9F868AAC55FABD1F3E61599F1C7BBF /* Pods-SpaceFinder.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SpaceFinder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SpaceFinder/Pods-SpaceFinder.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		81F5EFEDA611EACAD246AA582B97229E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 674E1FC60C97952F23922352224EB387 /* KeychainAccess.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainAccess/KeychainAccess-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainAccess/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KeychainAccess/KeychainAccess.modulemap";
+				PRODUCT_MODULE_NAME = KeychainAccess;
+				PRODUCT_NAME = KeychainAccess;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D8761E647322477EE2E64E105EAA40A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15A72DBE1A0E2079889BFA133A282275 /* AzureCore.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AzureCore/AzureCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AzureCore/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AzureCore/AzureCore.modulemap";
+				PRODUCT_MODULE_NAME = AzureCore;
+				PRODUCT_NAME = AzureCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FC905E9EFF8E8F8CBCBEBF6FCEE16E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 674E1FC60C97952F23922352224EB387 /* KeychainAccess.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainAccess/KeychainAccess-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainAccess/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KeychainAccess/KeychainAccess.modulemap";
+				PRODUCT_MODULE_NAME = KeychainAccess;
+				PRODUCT_NAME = KeychainAccess;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0738763DC1A9DCB6C4EF542A55BE7BB9 /* Build configuration list for PBXNativeTarget "Willow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ECB3B5AD10E51022BDCC010D1DE9601 /* Debug */,
+				3DF22FEB8C9869F9583EF0BECD603A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */,
+				08638A96A528B1EC32DE62F8A728389D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E30C6831F8F165A3BCBE71A36ACF60E /* Build configuration list for PBXNativeTarget "AzureCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47320927BE012193732A6FA1D20F0B33 /* Debug */,
+				D8761E647322477EE2E64E105EAA40A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83BE23629FA13FF2A38E0D10256A16D3 /* Build configuration list for PBXNativeTarget "AzureData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BDBE4DC8A94A91E068AEA1A11112724 /* Debug */,
+				053BD67DAB0AD3D4303C398B9A58F3FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B58EF2905820C9AE08BB3E722EEDFA5C /* Build configuration list for PBXNativeTarget "Pods-SpaceFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B0EE1FDCEECB6C33C68BE500F57F798 /* Debug */,
+				5DD16891A3A6CC6275ECD4989BE10FAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC637884A270B3245A9093E401C43CCE /* Build configuration list for PBXNativeTarget "KeychainAccess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC905E9EFF8E8F8CBCBEBF6FCEE16E00 /* Debug */,
+				81F5EFEDA611EACAD246AA582B97229E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

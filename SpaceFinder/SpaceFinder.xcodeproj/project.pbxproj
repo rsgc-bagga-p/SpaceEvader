@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C3D97A522196219005D7DC7 /* MicrosoftAzureMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3D97A422196219005D7DC7 /* MicrosoftAzureMobile.framework */; };
+		4C3D97A92219C100005D7DC7 /* CustomDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3D97A82219C100005D7DC7 /* CustomDocument.swift */; };
 		4CB8DF3B22189E4700E4B345 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB8DF3A22189E4700E4B345 /* AppDelegate.swift */; };
 		4CB8DF3D22189E4700E4B345 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB8DF3C22189E4700E4B345 /* ViewController.swift */; };
 		4CB8DF4022189E4800E4B345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB8DF3E22189E4800E4B345 /* Main.storyboard */; };
 		4CB8DF4322189E4800E4B345 /* SpaceFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CB8DF4122189E4800E4B345 /* SpaceFinder.xcdatamodeld */; };
 		4CB8DF4522189E4900E4B345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB8DF4422189E4900E4B345 /* Assets.xcassets */; };
 		4CB8DF4822189E4900E4B345 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB8DF4622189E4900E4B345 /* LaunchScreen.storyboard */; };
+		7B00F6D2AEC5F84821F21899 /* Pods_SpaceFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4CCE3A5F866B3C6E640030B /* Pods_SpaceFinder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43D6C246FB604A4313BFF5AE /* Pods-SpaceFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceFinder/Pods-SpaceFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		4C3D97A422196219005D7DC7 /* MicrosoftAzureMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MicrosoftAzureMobile.framework; sourceTree = SOURCE_ROOT; };
+		4C3D97A722197B74005D7DC7 /* SpaceFinder-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SpaceFinder-Bridging-Header.h"; sourceTree = "<group>"; };
+		4C3D97A82219C100005D7DC7 /* CustomDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDocument.swift; sourceTree = "<group>"; };
 		4CB8DF3722189E4700E4B345 /* SpaceFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CB8DF3A22189E4700E4B345 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CB8DF3C22189E4700E4B345 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +31,8 @@
 		4CB8DF4422189E4900E4B345 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CB8DF4722189E4900E4B345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CB8DF4922189E4900E4B345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62DDAD125FC8313C96D55FF9 /* Pods-SpaceFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceFinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceFinder/Pods-SpaceFinder.release.xcconfig"; sourceTree = "<group>"; };
+		E4CCE3A5F866B3C6E640030B /* Pods_SpaceFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +40,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C3D97A522196219005D7DC7 /* MicrosoftAzureMobile.framework in Frameworks */,
+				7B00F6D2AEC5F84821F21899 /* Pods_SpaceFinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A516F874F5DB809AE1602E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43D6C246FB604A4313BFF5AE /* Pods-SpaceFinder.debug.xcconfig */,
+				62DDAD125FC8313C96D55FF9 /* Pods-SpaceFinder.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4CB8DF2E22189E4700E4B345 = {
 			isa = PBXGroup;
 			children = (
 				4CB8DF3922189E4700E4B345 /* SpaceFinder */,
 				4CB8DF3822189E4700E4B345 /* Products */,
+				0A516F874F5DB809AE1602E4 /* Pods */,
+				95F942B6362938C8FBE83534 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +78,26 @@
 		4CB8DF3922189E4700E4B345 /* SpaceFinder */ = {
 			isa = PBXGroup;
 			children = (
+				4C3D97A422196219005D7DC7 /* MicrosoftAzureMobile.framework */,
 				4CB8DF3A22189E4700E4B345 /* AppDelegate.swift */,
 				4CB8DF3C22189E4700E4B345 /* ViewController.swift */,
+				4C3D97A82219C100005D7DC7 /* CustomDocument.swift */,
 				4CB8DF3E22189E4800E4B345 /* Main.storyboard */,
 				4CB8DF4422189E4900E4B345 /* Assets.xcassets */,
 				4CB8DF4622189E4900E4B345 /* LaunchScreen.storyboard */,
+				4C3D97A722197B74005D7DC7 /* SpaceFinder-Bridging-Header.h */,
 				4CB8DF4922189E4900E4B345 /* Info.plist */,
 				4CB8DF4122189E4800E4B345 /* SpaceFinder.xcdatamodeld */,
 			);
 			path = SpaceFinder;
+			sourceTree = "<group>";
+		};
+		95F942B6362938C8FBE83534 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4CCE3A5F866B3C6E640030B /* Pods_SpaceFinder.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CB8DF4C22189E4900E4B345 /* Build configuration list for PBXNativeTarget "SpaceFinder" */;
 			buildPhases = (
+				6E0BDE875516E6D10D6610C3 /* [CP] Check Pods Manifest.lock */,
 				4CB8DF3322189E4700E4B345 /* Sources */,
 				4CB8DF3422189E4700E4B345 /* Frameworks */,
 				4CB8DF3522189E4700E4B345 /* Resources */,
+				8832941F3D6D61BE399009CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +168,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6E0BDE875516E6D10D6610C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpaceFinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8832941F3D6D61BE399009CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SpaceFinder/Pods-SpaceFinder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AzureCore/AzureCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AzureData/AzureData.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/Willow/Willow.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AzureCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AzureData.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Willow.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpaceFinder/Pods-SpaceFinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4CB8DF3322189E4700E4B345 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4CB8DF3D22189E4700E4B345 /* ViewController.swift in Sources */,
+				4C3D97A92219C100005D7DC7 /* CustomDocument.swift in Sources */,
 				4CB8DF4322189E4800E4B345 /* SpaceFinder.xcdatamodeld in Sources */,
 				4CB8DF3B22189E4700E4B345 /* AppDelegate.swift in Sources */,
 			);
@@ -284,10 +365,15 @@
 		};
 		4CB8DF4D22189E4900E4B345 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43D6C246FB604A4313BFF5AE /* Pods-SpaceFinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WK2LD83792;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SpaceFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -295,6 +381,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SI.SpaceFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpaceFinder/SpaceFinder-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,10 +389,15 @@
 		};
 		4CB8DF4E22189E4900E4B345 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62DDAD125FC8313C96D55FF9 /* Pods-SpaceFinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WK2LD83792;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SpaceFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,6 +405,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SI.SpaceFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpaceFinder/SpaceFinder-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

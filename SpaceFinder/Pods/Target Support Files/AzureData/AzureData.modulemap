@@ -1,0 +1,6 @@
+framework module AzureData {
+  umbrella header "AzureData-umbrella.h"
+
+  export *
+  module * { export * }
+}
