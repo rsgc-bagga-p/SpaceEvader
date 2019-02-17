@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // or
         
-       AzureData.configure(forAccountNamed: "spaceevaders69bd41", withMasterKey: "xEcnF9QiUd5AVhpYCYEmK5HSF8YeLtT5dZyQe77n4EdQwObepJFv88jnZGpZUksbRtUInyMelwYTIUL4Gooepw==", withPermissionMode: PermissionMode(rawValue: "Read")!)
+        AzureData.configure(forAccountNamed: "spaceevaders69bd41", withMasterKey: "AccountEndpoint=https://spaceevad.documents.azure.com:443/;AccountKey=xEcnF9QiUd5AVhpYCYEmK5HSF8YeLtT5dZyQe77n4EdQwObepJFv88jnZGpZUksbRtUInyMelwYTIUL4Gooepw==;", withPermissionMode: PermissionMode(rawValue: "Read")!)
         return true
     }
 
